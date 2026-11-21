@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퀴즈 생성기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>퀴즈 생성기</h1>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="activity.html">학습활동 추천</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>초등 3학년 퀴즈 만들기</h2>
+      <form id="quiz-form" novalidate>
+        <div class="field">
+          <label for="subject">교과</label>
+          <select id="subject" name="subject" aria-describedby="subject-error">
+            <option value="">교과를 선택하세요</option>
+            <option>국어</option>
+            <option>도덕</option>
+            <option>사회</option>
+            <option>수학</option>
+            <option>과학</option>
+            <option>체육</option>
+            <option>음악</option>
+            <option>미술</option>
+            <option>영어</option>
+          </select>
+          <p class="field-error" id="subject-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="unit">단원</label>
+          <input type="text" id="unit" name="unit" maxlength="50" autocomplete="off"
+                 placeholder="예: 분수와 소수" aria-describedby="unit-error">
+          <p class="field-error" id="unit-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="difficulty">난이도</label>
+          <select id="difficulty" name="difficulty" aria-describedby="difficulty-error">
+            <option value="">난이도를 선택하세요</option>
+            <option>쉬움</option>
+            <option>보통</option>
+            <option>어려움</option>
+          </select>
+          <p class="field-error" id="difficulty-error" role="alert"></p>
+        </div>
+        <button type="submit" id="submit-button">문항 만들기</button>
+      </form>
+    </section>
+    <section id="result" aria-live="polite">
+      <p>결과가 여기에 표시됩니다.</p>
+    </section>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>

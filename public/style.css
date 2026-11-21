@@ -1,0 +1,150 @@
+body {
+  font-family: "Malgun Gothic", sans-serif;
+  margin: 0;
+  color: #222;
+  background: #f7f7f9;
+}
+
+header {
+  background: #2f5d8a;
+  color: #fff;
+  padding: 16px 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 16px;
+}
+
+main {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+section + section {
+  margin-top: 16px;
+}
+
+section h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.field [aria-invalid="true"] {
+  border-color: #b3261e;
+}
+
+.field-error {
+  margin: 4px 0 0;
+  color: #b3261e;
+  font-size: 0.9rem;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+button {
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: bold;
+  color: #fff;
+  background: #2f5d8a;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #8a9bab;
+  cursor: wait;
+}
+
+.result-error {
+  color: #b3261e;
+}
+
+.result-note {
+  margin: 0 0 12px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-left: 6px solid #2f5d8a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #fbfcfe;
+}
+
+.card-number {
+  margin: 0 0 6px;
+  font-size: 0.9rem;
+  color: #2f5d8a;
+}
+
+.card-question {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.card-choices {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.card-choices li {
+  padding: 4px 0;
+}
+
+.card-answer summary {
+  color: #2f5d8a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-answer p {
+  margin: 8px 0 0;
+}
